@@ -1,0 +1,159 @@
+body {
+  margin: 0 auto;
+  padding: 0 20px;
+  font-family: "Nunito Sans", Helvetica, Arial, sans-serif;
+  max-width: 1440px;
+}
+
+body * {
+  box-sizing: border-box;
+}
+
+.wrapper {
+background-color: #131313;
+background-size: cover;
+width: 1440px;
+height: 783px;
+}
+
+.tete {
+  display: flex;
+}
+
+.project {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 130px;
+  width: 442px;
+  margin-top: 130px;
+  padding-top: 34px;
+}
+
+.title-1 {
+  Font-family: "Yeseva One", Helvetica, Arial, serif;
+  font-size: 27px;
+  line-height: 120%;
+  margin-top: 0;
+  color: #E3B873;
+  margin-left: -10px;
+}
+
+.block-text-1 {
+  margin-top: 0;
+  font-size: 14px;
+  line-height: 190%;
+  color: white;
+}
+
+.description {
+  margin-left: -10px;
+  padding-top: 10px;
+  margin-bottom: 50px;
+}
+
+.city {
+  font-family: "Yeseva One", Helvetica, Arial, serif;
+  font-size: 18px;
+  line-height: 130%;
+  color: #E3B873;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.city-style {
+  height: 102px;
+  width: 190px;
+  margin-bottom: 10px;
+  display: inline-block;
+}
+
+.linkPhoto {
+  display: flex;
+  flex-direction: column;
+  margin-top: -280px;
+}
+
+.nav_block_deux_one {
+  margin-top: -255px;
+  margin-bottom: 150px;
+  margin-left: 500px;
+  font-size: 14px;
+  line-height: 136%;
+  Font-family: "Yeseva One", Helvetica, Arial, serif;
+}
+
+.header-nav-deux {
+  min-inline-size: max-content;
+  margin-top: 25px;
+  margin-left: 0;
+  padding-left: 0;
+  width: 624px;
+  height: 24px; 
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-decoration: none;
+  color: white;  
+}
+
+a:active {
+  border-bottom: 1px solid;
+  color: #E3B873;
+}
+
+.link_active, .menu:hover {
+  color: #E3B873;
+}
+
+.menu {
+  cursor: pointer;
+}
+
+.image {
+  margin-top: -120px;
+  margin-left: 500px;
+  background-size: cover;
+  width: 679px;
+  height: 482px;
+  transition: 0.7s ease 0.5s;
+}
+
+.slider__block {
+  display: flex;
+  align-items: center; 
+  margin-top: -30px;
+  margin-left: 150px; 
+}
+
+.fleches {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.prev, .next {
+  justify-content: center;
+  color: white;
+  margin: 5px;
+  transition: 0.3s; 
+}
+
+.prev:hover {
+  transform: translate(-7px);
+}
+
+.next:hover {
+  transform: translate(7px);
+}
+
+.point {
+  padding: 10px 10px 7px 10px;
+  cursor: pointer;
+  opacity: 30%;
+}
+
+.point:hover, .active {
+  opacity: initial;
+}
