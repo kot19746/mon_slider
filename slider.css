@@ -102,7 +102,7 @@ a:active {
   color: #E3B873;
 }
 
-.link_active, .menu:hover {
+.menu:hover, .menu-active {
   color: #E3B873;
 }
 
@@ -111,8 +111,8 @@ a:active {
 }
 
 .image {
-  margin-top: -120px;
-  margin-left: 500px;
+  margin-top: -210px;
+  margin-left: 315px;
   background-size: cover;
   width: 679px;
   height: 482px;
@@ -122,7 +122,7 @@ a:active {
 .slider__block {
   display: flex;
   align-items: center; 
-  margin-top: -30px;
+  margin-top: -280px;
   margin-left: 150px; 
 }
 
@@ -154,6 +154,28 @@ a:active {
   opacity: 30%;
 }
 
-.point:hover, .active {
+.point:hover {
   opacity: initial;
+}
+
+.point_active {
+  padding: 10px 10px 7px 10px;
+  cursor: pointer;
+  opacity: initial;
+}
+
+.salons {
+  display: none;
+}
+
+.salons-active {
+  display: block;
+}
+
+.work_details {
+  margin-top: 0;
+  font-size: 14px;
+  line-height: 190%;
+  color: white;
+  width: 100px;
 }
