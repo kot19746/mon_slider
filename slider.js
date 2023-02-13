@@ -1,11 +1,13 @@
-const sliderLinkMenu = document.querySelectorAll(".menu");
+
+const blockHeaderLinkMenu = document.querySelectorAll(".menu");
 const sliderDots = document.querySelectorAll(".point");
 const flesheNext = document.querySelector(".next");
 const fleshePrev = document.querySelector(".prev");
+const pointNext = document.getElementById("plus");
+const pointPrev = document.getElementById("moin");
 const salons = document.querySelectorAll(".salons");
 const workDetails = document.querySelectorAll(".work_details");
 let currentIndex = 0;
-
 const details = [
   {
       city: 'Rostov-on-Don LCD Admiral',
@@ -24,19 +26,19 @@ const details = [
   },
 ];
 
-function showDetails(index) {
+function updateData(index) {
 workDetails[0].textContent = details[index].city;
 workDetails[1].textContent = details[index].area;
 workDetails[2].textContent = details[index].time;
 }
 
-for (let i = 0; i < sliderLinkMenu.length; i++) {
-sliderLinkMenu[i].addEventListener("click", function () {
-    activeClass(i);
+for (let i = 0; i < blockHeaderLinkMenu.length; i++) {
+blockHeaderLinkMenu[i].addEventListener("click", function () {
+    updateActiveClasses(i);
 });
 
 sliderDots[i].addEventListener("click", function () {
-    activeClass(i);
+    updateActiveClasses(i);
 });
 }
 
@@ -47,7 +49,7 @@ if (currentIndex < 0) {
     currentIndex = salons.length - 1;
 }
 salons[currentIndex].classList.add('salons-active');
-activeClass(currentIndex);
+updateActiveClasses(currentIndex);
 });
 
 flesheNext.addEventListener('click', function () {
@@ -57,23 +59,44 @@ if (currentIndex >= salons.length) {
     currentIndex = 0;
 }
 salons[currentIndex].classList.add('salons-active');
-activeClass(currentIndex);
+updateActiveClasses(currentIndex);
 });
 
-function activeClass(index) {
-for (let j = 0; j < sliderLinkMenu.length; j++) {
-    sliderLinkMenu[j].classList.remove("menu-active");
+pointPrev.addEventListener('click', function () {
+salons[currentIndex].classList.remove('salons-active');
+currentIndex--;
+if (currentIndex < 0) {
+    currentIndex = salons.length - 1;
+}
+salons[currentIndex].classList.add('salons-active');
+updateActiveClasses(currentIndex);
+});
+
+pointNext.addEventListener('click', function () {
+salons[currentIndex].classList.remove('salons-active');
+currentIndex--;
+if (currentIndex < 0) {
+    currentIndex = salons.length - 1;
+}
+salons[currentIndex].classList.add('salons-active');
+updateActiveClasses(currentIndex);
+});
+
+function updateActiveClasses(index) {
+for (let j = 0; j < blockHeaderLinkMenu.length; j++) {
+    blockHeaderLinkMenu[j].classList.remove("menu-active");
 }
 
 for (let j = 0; j < sliderDots.length; j++) {
     sliderDots[j].classList.remove("point_active");
 }
 
-sliderLinkMenu[index].classList.add("menu-active");
+blockHeaderLinkMenu[index].classList.add("menu-active");
 sliderDots[index].classList.add("point_active");
 
 salons[currentIndex].classList.remove('salons-active');
 currentIndex = index;
 salons[currentIndex].classList.add('salons-active');
-showDetails(index);
+updateData(index);
 }
+
