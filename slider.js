@@ -1,4 +1,3 @@
-
 const blockHeaderLinkMenu = document.querySelectorAll(".menu");
 const sliderDots = document.querySelectorAll(".point");
 const flesheNext = document.querySelector(".next");
@@ -99,4 +98,3 @@ currentIndex = index;
 salons[currentIndex].classList.add('salons-active');
 updateData(index);
 }
-
