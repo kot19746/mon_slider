@@ -12,7 +12,6 @@ body * {
 .wrapper {
 background-color: #131313;
 background-size: cover;
-width: 1440px;
 height: 783px;
 }
 
@@ -49,6 +48,11 @@ height: 783px;
   margin-left: -10px;
   padding-top: 10px;
   margin-bottom: 50px;
+}
+
+.travaux {
+  display: flex;
+  flex-wrap: wrap;  
 }
 
 .city {
@@ -185,31 +189,119 @@ a:active {
   display: none;
 }
 
-@media  screen and (max-width: 706px) {
-  .slider_comode {
-    display: block;
-    margin-top: -250px;
+@media  screen and (max-width: 1300px) {
+
+  .linkPhoto {
+    display: none;
   }
 
-  .slider__block, .linkPhoto,
-  .slider_title {
+  .project {
+    margin-top: 0;
+  }
+
+  .salons-active {
+    margin-left: -600px;
+  }
+
+  .tete {
+    height: auto;
+    background-color: #131313;
+  }
+
+  .wrapper {
+    height: 850px;
+  }
+
+  .travaux {
+    margin-top: 670px;
+  }
+
+  .image {
+    margin-top: -890px;
+  }
+
+  .slider__block {
+    margin-top: -115px;
+  }
+}
+
+@media  screen and (max-width: 706px) {
+
+  #description-mobile, .title-1 {
+    text-align: center;
+  }
+
+  .tete {
+    height: auto;
+    background-color: #131313;
+  }
+  
+  .wrapper {
+    height: 850px;
+  }
+
+  .travaux {
+    margin-top: 370px;
+  }
+  
+  .slider_comode {
+    margin-top: -100px;
+    display: flex;
+    justify-content: space-around;
+    margin-left: 55px;
+  }
+
+  .slider__block, .linkPhoto {
     display: none;
   }
 
   .image {
-    margin-top: -20px;
+    display: flex;
+    align-items: center;
+    margin-top: -840px;
     margin-left: 50px;
+  }
+
+  .salons-active {
+    margin-top: 315px;
+    margin-left: 10px;
+  }
+
+  .salon_image {
+    width: 70vw;
   }
 
   .project {
     margin-top: 10px;
+    margin-left: 15px;
   }
 
   #plus {
-    margin-left: 560px;
+    margin-left: 85px;
   }
 
   #moin {
-    margin-left: 70px;
+    margin-left: -85px;
+  }
+}
+
+@media  screen and (max-width: 435px) {
+
+  .slider_comode {
+    margin-top: -240px;
+    margin-left: 60px;
+  }
+
+  .salons-active {
+    margin-top: 45px;
+    margin-left: -25px;
+  }
+
+  .travaux {
+    margin-top: 200px;
+  }
+
+  #description-mobile, .title-1 {
+    text-align: center;
   }
 }
