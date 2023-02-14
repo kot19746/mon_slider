@@ -18,10 +18,11 @@
                         <div class="project">       <!--project-->
                             <div class="slider_title">
                                 <h1 class="title-1">COMPLETED<br> PROJECTS</h1>
-                                <p class="block-text-1 description">
+                                <p class="block-text-1 description" id="description-mobile">
                                 Only a small part of the work performed by our company is presented <br> on the site.
                                 For 14 years on in the construction <br>market we have made happy more than 1000 families</p>
                             </div>
+                            <div class="travaux">
                                 <div class="city-style">
                                     <h2 class="city">CITY:</h2>
                                     <div class="work_details">Rostov-on-Don<br>
@@ -39,7 +40,7 @@
                                     <h2 class="city">REPAIR COST:</h2>
                                     <p class="block-text-1">Upon request</p>
                                 </div>
-
+                            </div><!--travaux-->
                                     <div class="linkPhoto">
                                         <nav class="nav_block_deux_one">
                                             <ul class="header-nav header-nav-deux">
@@ -53,32 +54,31 @@
                     </div><!--tete-->
                     <div class="image">
                         <div class="salons salons-active">
-                            <img  src="./images/fumespace.jpg" alt="image">
+                            <img class="salon_image" src="./images/fumespace.jpg" alt="image">
                         </div>
                         <div class="salons">
-                            <img  src="./images/sochi.jpg" alt="image">
+                            <img class="salon_image" src="./images/sochi.jpg" alt="image">
                         </div>
                         <div class="salons">
-                            <img  src="./images/patriotic.jpg" alt="image">
+                            <img class="salon_image" src="./images/patriotic.jpg" alt="image">
                         </div>
                     </div>
-                        <div class="slider__block">
-                           <nav class="fleches">      <!--FLECHES-->
+                        <div class="slider_comode">  <!--Mini-slider mobile version-->                                    
+                            <a id="moin"><img src="svg/moin.svg" alt="fleche"></a>
+                            <a id="plus"><img src="svg/plus.svg" alt="fleche"></a>                                       
+                        </div>
+                    <div class="slider__block">
+                        <nav class="fleches">      <!--FLECHES-->
                             <span class="prev"><img src="svg/fleche_left.svg"></span>
                             <span><img class="point point_active" src="svg/point.svg"></span>
                             <span><img class="point" src="svg/point.svg"></span>
                             <span><img class="point" src="svg/point.svg"></span>
                             <span class="next"><img src="svg/fleche_right.svg"></span>
-                          </nav>
-                        </div> 
-                        <div class="slider_comode">  <!--Mini-slider mobile version-->                                    
-                            <a id="moin" class="prev"><img src="svg/moin.svg" alt="fleche"></a>
-                            <a id="plus" class="next"><img src="svg/plus.svg" alt="fleche"></a>                                       
-                        </div>                          
+                        </nav>
+                    </div>                             
                 </div><!--wrapper-->
             </section>
         </main>
             <script src="slider.js"></script>
     </body>
 </html>
-
